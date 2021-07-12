@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            border:2px dotted slategray;
+            display:flex;
+            justify-content:space-between;
+           height:400px;
+            align-items:stretch;
+        }
+        .box{
+            font-size:3em;
+            width:200px;
+          height: 300px;
+            border:3px dashed rebeccapurple;
+        }
+        #three{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>I am flexible right now</h1>
+    <div class="container">
+   <div class="box">box 1</div>
+   <div class="box">box 2</div>
+   <div id="three" class="box"> box 3</div>
+</div>
+    
+</body>
+</html>
